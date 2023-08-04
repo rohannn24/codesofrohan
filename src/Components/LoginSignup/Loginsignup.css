@@ -1,0 +1,138 @@
+.input {
+    color: #000000;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input:focus+.input-border {
+    width: 100%;
+}
+
+.form-control {
+    position: relative;
+    --width-of-input: 300px;
+    border: 0px;
+    background-color: #002233;
+}
+
+.input-alt {
+    font-size: 1.2rem;
+    padding-inline: 1em;
+    padding-block: 0.8em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-border-alt {
+    height: 3px;
+    background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
+    transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1.00);
+}
+
+.input-alt:focus+.input-border-alt {
+    width: 100%;
+}
+
+.li-bg{
+    background-image: url('./Resources/wave-haikei.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 140vh;
+}
+.full-login-page {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+
+}
+
+.loging-in-card {
+    display: grid;
+    place-items: center;
+    width: 500px;
+    box-shadow: 0 0 10px rgb(4, 46, 161);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+button {
+    --color: #002233;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #002233;
+    transition: background 0s;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}

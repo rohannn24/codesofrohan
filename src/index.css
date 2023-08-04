@@ -1,0 +1,10 @@
+.say-in-mid{
+    width: 70%;
+    margin:auto;
+    padding: 0px 15px;
+}
+@media screen and (max-width: 1315px) {
+    .say-in-mid{
+        width: 95%;
+    }
+}

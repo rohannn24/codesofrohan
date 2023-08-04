@@ -1,0 +1,203 @@
+.c-home{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 0px 15px;
+}
+.home-left{
+    width: 15%;
+    border-right: 1px solid black;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+.home-mid{
+    width: 70%;
+    margin: auto;
+}
+.home-right{
+    width: 15%;
+    border-left: 1px solid black;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 70px;
+}
+.nameWithLine{
+    display: flex;
+}
+.name-sec{
+    font-size: 30px;
+    font-weight: 700;
+    margin: auto;
+    margin-right: 10px;
+}
+.line-sec{
+    border: 2px solid red;
+    height: 0px;
+    margin: auto;
+    flex-grow: 100;
+}
+.list{
+    text-align: right;
+    margin: 0px 20px;
+}
+.list-col a{
+    color: rgb(103, 103, 103);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+.list-col a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+.list-col a:hover::after{
+    transform: scale(1);
+}
+.list-col a:hover{
+    color: red;
+}
+.card-sec{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+}
+.home-card{
+    margin: auto;
+    padding: 30px;
+    width: fit-content;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-img{
+    overflow: hidden;
+}
+.card-img img{
+    width: 150px;
+    transition: all 0.3s;
+}
+.card-img img:hover{
+    transform: scale(1.4);
+}
+.card-title{
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+    font-weight: 700;
+}
+.full-five-sec{
+    width: 100%;
+    display: flex;
+}
+.main-page{
+    width: 60%;
+    padding: 20px;
+}
+.mp-img{
+    width: 100%;
+    overflow: hidden;
+}
+.mp-img img{
+    width: 100%;
+    transition: all 0.2s;
+}
+.mp-img img:hover{
+    transform: scale(1.3);
+}
+.btn{
+    margin: 0px;
+}
+.hr-topics a{
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+}
+.hr-topics a:hover{
+    color: red;
+}
+.supporting-page{
+    width: 40%;
+    margin: auto;
+}
+.sp-sec{
+    display: flex;
+    padding: 20px 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.sp-sec p{
+    margin: auto;
+    padding: 0px 10px;
+}
+.sp-img{
+    width: 30%;
+    overflow: hidden;
+}
+.sp-img img{
+    width: 100%;
+    transition: all 0.2s;
+}
+.sp-img img:hover{
+    transform: scale(1.3);
+}
+@media screen and (max-width: 1315px) {
+    .home-left{
+        display: none;
+    }
+    .home-mid{
+        width: 90%;
+    }
+    .home-card{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .card-img{
+        width: 100%;
+    }
+    .card-img img{
+        width: 100%;
+
+    }
+    .home-right{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 981px) {
+    .full-five-sec{
+        display: block;
+    }
+    .main-page{
+        width: 100%;
+    }
+    .supporting-page{
+        width: 100%;
+    }
+    .sp-sec p{
+        margin: auto;
+    }
+    .h-long-card{
+        display: block;
+    }
+    .ft-img{
+        width: 100%;
+    }
+    .ft-img img{
+        width: 100%;
+    }
+    .f-t-card{
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+}
