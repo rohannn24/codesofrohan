@@ -1,0 +1,10 @@
+.batch1{
+    position: fixed;
+    right: -27px;
+    top: 30%;
+    background-color:rgba(3, 20, 66);
+    transform: rotate(90deg);
+    height: 30px;
+    padding: 3px 7px;
+    color: white;
+}

@@ -1,0 +1,57 @@
+ .c-name {
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    position: fixed;
+    background-color: rgba(3, 20, 66);
+    width: 100%;
+    z-index: 1;
+    cursor: pointer;
+    color: white
+ }
+
+ .c-name img {
+    width: 80px;
+    height: 80px;
+ }
+
+ .c-name h1 {
+    margin: auto 0px;
+    margin-left: 30px;
+    font-size: 30px;
+    letter-spacing: 3px;
+ }
+ @media screen and (max-width: 1317px) {
+    .c-name h1 {
+       font-size: 20px;
+       margin: 33px 0px;
+    }
+
+    .c-name img {
+       width: 70px;
+       height: 70px;
+       margin: auto 0px;
+    }
+
+    .c-name {
+       padding: 5px;
+       height: auto;
+    }
+ }
+
+ @media screen and (max-width: 375px) {
+    .c-name h1 {
+       display: none;
+    }
+
+    .c-name img {
+       width: 70px;
+       height: 70px;
+       margin: auto 0px;
+    }
+
+    .c-name {
+       padding: 5px;
+       height: auto;
+    }
+ }

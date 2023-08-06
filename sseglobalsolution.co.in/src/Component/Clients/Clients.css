@@ -1,0 +1,16 @@
+.c-client-full{
+    padding-top: 150px;
+}
+.c-client-head{
+    font-size: 50px;
+    text-align: center;
+}
+.three-clients{
+    display: flex;
+    margin-bottom: 10vh;
+}
+.three-clients img{
+    width: 20%;
+    margin: auto;
+    border-radius: 2000px;
+}

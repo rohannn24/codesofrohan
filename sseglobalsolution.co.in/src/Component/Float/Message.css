@@ -1,0 +1,30 @@
+.contact-window img{
+    width: 40px;
+    display: flex;
+    margin: 6px 10px;
+}
+.c-con{
+    color: white;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+.contact-window{
+    position: fixed;
+    background-color: rgba(3, 20, 66);
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    bottom: 20px;
+    right: 40px;
+    transition: transform 0.2s;
+    z-index: 999;
+}
+.contact-window:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width: 445px){
+    .contact-window{
+        bottom: 40px;
+        right:  20px;
+    }
+}

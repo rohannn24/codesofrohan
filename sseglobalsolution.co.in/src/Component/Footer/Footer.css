@@ -1,0 +1,9 @@
+.c-footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: -17px;
+    margin-top:-17px;
+}

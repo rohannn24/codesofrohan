@@ -1,0 +1,50 @@
+.c-border{
+    background-color: rgba(3, 20, 66);
+    color: white;
+}
+.f-last{
+    padding: 20px 0px;
+}
+.last{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.l-name {
+    width: 50%;
+}
+.l-name img{
+    width: 30%;
+    margin-left: 120px;
+}
+.desc{
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1317px){
+    .f-last{
+        padding: 70px 0px;
+    }
+    .last{
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .l-name {
+        width: 70%;
+        margin: auto;
+    }
+    .l-name h1{
+        text-align: center;
+    }
+    .l-name img{
+        width: 62%;
+        margin-left: 50px;
+    }
+    .desc{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+}
