@@ -15,7 +15,6 @@ function App() {
         <Route exact path='/' element = {<Home/>}/>
         <Route exact path='/tag/michael-jordan' element = {<MichaelJordan/>}/>
         <Route exact path='/category/nba' element = {<NBA/>}/>
-        {/* <Route exact path='/category/nba' element = {<NBA/>}/> */}
       </Routes>
       <Footer/>
     </>
