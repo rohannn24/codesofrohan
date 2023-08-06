@@ -1,0 +1,43 @@
+.c-card{
+    display: flex;
+}
+.card-img{
+    width: 150px;
+    overflow: hidden;
+    margin: 20px;
+}
+.card-img img{
+    width: 150px;
+    transition: all 0.5s;
+}
+.card-img img:hover{
+    transform: scale(1.1);
+}
+.details{
+    margin: auto;
+    padding: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    color: black;
+}
+.date{
+    color: red;
+    font-style: italic;
+    font-weight: 500 !important;
+    font-size: 14px;
+}
+.details p{
+    font-weight: 700;
+}
+@media screen and (max-width: 1211px){
+    .card-img{
+        width: 100%;
+        margin: 0px;
+    }
+    .card-img img{
+        width: 100%;
+    }
+    .c-card{
+        display: block;
+    }
+}

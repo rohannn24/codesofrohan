@@ -1,0 +1,40 @@
+.nba-page{
+    padding: 40px;
+    padding-top: 60px;
+    width: 60%;
+    margin: auto;
+}
+.one-nba-head{
+    display: flex;
+}
+.one-nba-head img{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+.nba-head{
+    margin: 0px 10px;
+}
+.nba-head h3{
+    font-weight: 700;
+}
+.nba-line{
+    height: 0px;
+    margin: auto;
+    border: 2px solid red;
+    flex-grow: 100;
+}
+.nba-info p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1211px){
+    .nba-page{
+        width: 100%;
+    }
+    .one-nba-head{
+        padding-top: 20px;
+    }
+}

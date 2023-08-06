@@ -1,0 +1,9 @@
+.full-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    background-color: black;
+    z-index: 999;
+}

@@ -1,0 +1,167 @@
+/* -----------------top----nav------------------- */
+.top-nav {
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+
+.first-part {
+    width: 17%;
+}
+
+.auto-mg {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.nav-bgr {
+    margin: auto;
+    cursor: pointer;
+}
+
+.bgr-lines {
+    width: 20px;
+    margin: 5px 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+}
+
+.email-notifi {
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.email-notifi:hover {
+    text-decoration: underline;
+}
+
+.mid-part {
+    width: 50%;
+    margin: auto;
+}
+
+.mid-part h2 {
+    color: white;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.mid-part h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.last-part {
+    width: 17%;
+    margin: auto;
+}
+
+/* -----------------side----nav------------------- */
+
+.sidenav {
+    width: 20%;
+    height: 100vh;
+    top: 60px;
+    overflow-y: scroll;
+    background-color: rgb(23, 23, 23);
+    color: white !important;
+    position: fixed;
+    z-index: 998;
+}
+
+#side-nav {
+    display: none;
+}
+.sidenav ul {
+    list-style-type: none !important;
+    font-size: 20px;
+}
+.sidenav ul a{
+    text-decoration: none;
+}
+.game-name {
+    padding: 20px 0px;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+}
+.s-name{
+    width: 80%;
+}
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.sublist1{
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(23, 23, 23);
+    display: none;
+    z-index: 997;
+    position: fixed;
+    left: 20%;
+}
+.sublist1 ul li{
+    padding: 20px 0px;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.h-1:hover .s-1{
+    display: block;
+}
+
+
+
+
+
+@media screen and (max-width: 1423px) {
+    .email-notifi {
+        display: none;
+    }
+
+    .mid-part {
+        width: 20%;
+        margin: auto 0px;
+    }
+
+    .last-part {
+        width: 30%;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 43%;
+    }
+
+    .sidenav {
+        width: 50%;
+    }
+    .sublist1{
+        margin-left: 50%;
+        width: 50%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .last-part{
+        display: none;
+    }
+}

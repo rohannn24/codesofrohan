@@ -1,0 +1,31 @@
+.mj{
+    width: 60%;
+    margin:auto;
+    padding: 30px;
+    padding-top: 90px;
+}
+.mj img{
+    width: 100%;
+}
+.s-line{
+    width: 67%;
+    border: 2px solid red;
+    margin: 10px 0;
+}
+.s-line-bold{
+    width: 34%;
+    border: 2px solid red;
+    margin: 20px 0;
+}
+.c-link{
+    color: black;
+    font-weight: bold;
+    border-bottom: 3px solid red;
+}
+@media screen and (max-width: 1204px) {
+    .mj{
+        width: 100%;
+        text-align: justify;
+    }
+
+}

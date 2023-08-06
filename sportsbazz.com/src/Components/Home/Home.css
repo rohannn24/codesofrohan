@@ -1,0 +1,289 @@
+a{
+    text-decoration: none;
+}
+.c-home {
+    display: flex;
+}
+
+/* ------------------------------------------------------ */
+.left-side {
+    width: 20%;
+    height: 100vh;
+    border-right: 1px solid rgb(170, 170, 170);
+    text-align: right;
+    padding-right: 20px;
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+}
+
+.home-side-list {
+    list-style-type: none;
+}
+
+.home-side-list a {
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+}
+
+.home-side-list a li {
+    margin: 15px 0px;
+    transition: all 0.2s;
+}
+
+.home-side-list a li:hover {
+    color: red;
+    margin-right: 20px;
+}
+
+/* ------------------------------------------------------------- */
+.mid-side {
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.d-flex1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.d-flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+.mid-first-list {
+    list-style-type: none;
+    display: flex;
+    height: 60px;
+    margin: 10px;
+}
+.mg-auto{
+    width: 100%;
+}
+.mid-first-list a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+.mid-first-list a li {
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    padding: 5px 30px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.mid-first-list a li:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.second-head-line {
+    display: flex;
+    margin: 30px 30px;
+}
+.second-head-line h4{
+    margin-right: 10px;
+    font-weight: 700;
+}
+.line {
+    border: 2px solid red;
+    flex-grow: 100;
+    height: 0px;
+    margin: auto;
+}
+
+.ath-card {
+    padding: 10px;
+    border: 2px solid rgb(204, 204, 204);
+    width: 170px;
+    height: fit-content;
+    margin: auto;
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0 0 1rem rgb(177, 177, 177);
+    overflow: hidden;
+}
+
+.ath-card p {
+    text-align: center;
+    font-weight: 700;
+}
+
+.img-control {
+    width: 150px;
+    overflow: hidden;
+}
+
+.img-control img {
+    width: 150px;
+    height: 170px;
+    transition: all 0.3s;
+}
+
+.img-control img:hover {
+    transform: scale(1.1);
+}
+.third-box{
+    display: flex;
+}
+.main-post{
+    width: 40%;
+    padding: 15px;
+    margin: auto;
+}
+.mg3{
+    margin-top: 30px;
+}
+.main-post p{
+    margin: 15px 0px;
+    color: red;
+    width: fit-content;
+    padding: 0px 5px;
+    border-radius: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.main-post p:hover{
+    background-color: red;
+    color: white;
+}
+.main-post h6{
+    font-weight: 700;
+}
+.mp-img-control{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+.main-post img{
+    width: 100%;
+    transition: all 0.5s;
+}
+.main-post img:hover{
+    transform: scale(1.1);
+}
+.sub-post{
+    width: 60%;
+}
+.sub-post hr{
+    height: 2px;
+    color: rgb(122, 122, 122);
+}
+.hover-control{
+    width: 30%;
+    overflow: hidden;
+}
+.hover-control img{
+    width: 100%;
+    transition: all 0.5s;
+}
+.hover-control img:hover{
+    transform: scale(1.1);
+}
+.sub-post-card{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    cursor: pointer;
+}
+.c-title{
+    width: 70%;
+}
+.sub-post-card p{
+    font-size: 14px;
+    margin: 0 10px;
+    color: black;
+    font-weight: 600;
+}
+.writer{
+    font-weight: bold;
+    color: red !important;
+}
+/* ------------------------------------------------------------- */
+.right-side {
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+    border-left: 1px solid rgb(170, 170, 170);
+    overflow-y: scroll;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.e-pick {
+    width: 80%;
+    margin: auto;
+}
+
+.e-card p {
+    color: red;
+}
+
+.arrow1 {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    display: none;
+}
+
+.last-box{
+    width: 95%;
+    margin: auto;
+    margin: 30px;
+}
+@media screen and (max-width: 1209px) {
+    .c-home {
+        display: block;
+    }
+    .second-head-line{
+        margin-top: 70px;
+    }
+    .left-side {
+        display: none;
+    }
+    .home-side-list {
+        text-align: center;
+    }
+    .mid-side{
+        width: 100%;
+        margin-left: 0px;
+        margin:auto;
+    }
+    .ath-card{
+        margin-bottom: 30px;
+    }
+    .right-side{
+        display: none;
+    }
+    .third-box{
+        display: block;
+        width: 100%;
+    }
+    .main-post{
+        width: 100%;
+    }
+    .sub-post{
+        width: 100%;
+    }
+    .sub-post-card{
+        height: fit-content;
+    }
+    .c-title{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .mid-first-list{
+        display: none;
+    }
+}
