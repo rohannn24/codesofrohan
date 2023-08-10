@@ -1,0 +1,25 @@
+.sm-head{
+    text-align: center;
+}
+.center{
+    margin-top: 20vh;
+    font-family: 'Courier New', Courier, monospace !important;
+    width: 100%;
+}
+.sm-count{
+    text-align: center;
+}
+.c-btn{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(1, 1, 122);
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+}
+.c-btn:active{
+    background-color: rgba(1, 1, 122, 0.658);
+}

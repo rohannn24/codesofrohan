@@ -1,0 +1,42 @@
+.home-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.cards{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(233, 233, 233);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+.c-card {
+    width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    transition: all 0.3s;
+    margin: auto;
+    margin: 50px;
+    padding: 40px;
+    background-color: rgb(151, 150, 150);
+    border-radius: 20px;
+}
+.c-card:hover{
+    transform: scale(1.1);
+}
+.c-card img{
+    width: 300px;
+}
+.c-card h1{
+    text-align: center;
+}
+.btn{
+    width: fit-content;
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    cursor: pointer;
+}
