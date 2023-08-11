@@ -16,7 +16,7 @@ const Navbar = () => {
                     <ul className="navList">
                         <li className="navItems"><Link to = '/'>Home</Link></li>
                         <li className="navItems"><Link to = '/slot-machine'>Players</Link></li>
-                        <li className="navItems"><Link to = '/'>Latest News</Link></li>
+                        <li className="navItems"><Link to = '/challenge'>Latest News</Link></li>
                         <li className="navItems"><Link to = '/'>Top News</Link></li>
                         <li className="navItems"><Link to = '/'>About Us</Link></li>
                         <li className="navItems"><Link to = '/'>Contact Us</Link></li>

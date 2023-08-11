@@ -14,7 +14,7 @@
     box-shadow: 0 0 10px black;
 }
 .c-card {
-    width: fit-content;
+    width: 200px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     transition: all 0.3s;
@@ -28,7 +28,7 @@
     transform: scale(1.1);
 }
 .c-card img{
-    width: 300px;
+    width: 200px;
 }
 .c-card h1{
     text-align: center;
