@@ -1,0 +1,31 @@
+.c-eve-bgWhite{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.c-eve-bgBlack{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.c-eve-bgYellow{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.eve-btn{
+    width: fit-content;
+    padding: 10px;
+    background-color: aqua;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.eve-btn:hover{
+    transform: scale(1.1);
+}

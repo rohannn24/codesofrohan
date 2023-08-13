@@ -3,15 +3,16 @@ import './Challenge.css'
 let timeNow;
 
 const Challenge =  () => {
-    let [timeNow, getTime] = useState(0);
-    const handleOnClick = () => {
-        return ++timeNow;
-    }
+    let time = new Date().toLocaleTimeString();
+    let [currTime, timeNow] = useState(time);
+    setInterval(() => {
+        let timeUpdate = new Date().toLocaleTimeString();
+        timeNow(timeUpdate);
+    }, 1000);
     return(
         <>
             <div className="c-time">
-                <div className="curr-time">{timeNow}</div>
-                <button className="c-btn" onClick={handleOnClick}>Click Me</button>
+                <div className="curr-time">{currTime}</div>
             </div>
         </>
     );
