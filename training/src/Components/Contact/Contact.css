@@ -1,25 +1,81 @@
-.c-form{
-    text-align: center;
-    padding-top: 30vh;
-    height: 90vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aqua;
+.con-full{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding: 100px;
 }
-.c-form h1{
-    font-size: 50px;
-    transition: all 0.5s;
+.con-left{
+    width: 50%;
+    background-color: rgb(250, 227, 213);
+    overflow: hidden;
+    border-bottom-left-radius: 100px;
 }
-#input-text{
-    padding: 20px;
-    font-size: 30px;
-    border: 2px solid rgb(231, 231, 231);
-    border-radius: 20px;
-    margin: 30px 0px;
-    text-align: center;
+.con-right{
+    width: 50%;
+    background-color: rgb(252, 146, 75);
+    overflow: hidden;
+    border-top-right-radius: 100px;
 }
-#input-text:active{
+.con-lab{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.con-left form{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+.con-input{
+    border: 2px solid rgb(190, 190, 190);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.control-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.control-img img{
+    width: 100%;
+    mix-blend-mode: darken;
+}
+.print-detail{
+    width: 70%;
+    margin: auto;
+}
+.showbtn{
+    margin-left: 5px;
+    padding: 3px;
+    background-color: rgb(0, 0, 74);
+    color: white;
+    font-weight: 600;
     border: 0px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    cursor: pointer;
+    width: fit-content;
 }
-#input-text::placeholder{
-    color: rgb(0, 0, 115);
+@media screen and (max-width: 1286px) {
+    .con-full{
+        flex-direction: column-reverse;
+        width: 90%;
+        padding: 0;
+    }
+    .con-left{
+        margin: auto;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        padding-bottom: 20px;
+    }
+    .con-right{
+        margin: auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 401px) {
+    .naming{
+        width: 97%;
+        margin-left: 0 !important;
+    }
 }

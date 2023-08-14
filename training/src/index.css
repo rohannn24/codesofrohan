@@ -2,3 +2,14 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  border-radius: 30px;
+  background-color: rgb(95, 95, 95);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background-color: rgb(132, 25, 220);
+}

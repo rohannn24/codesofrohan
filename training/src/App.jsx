@@ -5,6 +5,7 @@ import Slotmach from './Components/Slotmach/Slotmach'
 import Challenge from "./Components/Challenge/Challenge";
 import Events from "./Components/Events/Events";
 import Contact from "./Components/Contact/Contact";
+import Todo from "./Components/Todo/Todo";
 
 const App = () => {
   return(
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/challenge" element = {<Challenge/>}/>
         <Route path="/Events" element = {<Events/>}/>
         <Route path="/contact" element = {<Contact/>}/>
+        <Route path="/to-do" element = {<Todo/>}/>
       </Routes>
     </>
   );
