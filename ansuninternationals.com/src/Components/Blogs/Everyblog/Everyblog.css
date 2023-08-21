@@ -1,0 +1,106 @@
+.c-blog{
+    width: 95%;
+    margin:auto;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.b-blog{
+    display: flex;
+}
+.blog-left{
+    width: 70%;
+}
+.blog-left a{
+    text-decoration: none;
+    color: black;
+}
+.blog-right{
+    width: 24%;
+    margin: 20px auto;
+}
+.recent{
+    background-color: aliceblue;
+}
+.recent ul li{
+    padding: 5px 0px;
+    transition: all 0.5s;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 0px;
+    list-style-type: none;
+}
+.recent ul li a{
+    text-decoration: none;
+    color: black;
+}
+.recent ul li:hover{
+    padding-left: 20px;
+    color: rgb(1, 1, 101);
+    font-style: italic;
+}
+.r-head{
+    background-color: rgb(116, 0, 158);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+.c-head{
+    text-align: center;
+}
+.c-card{
+    width: 100%;
+    display: flex;
+    text-align: justify;
+}
+.c-card img{
+    width: 25%;
+}
+.meta-data{
+    padding: 10px;
+}
+.title{
+    color: rgb(2, 2, 140);
+}
+.c-pagination-btn{
+    display: flex;
+    width: 60%;
+    margin:auto;
+}
+.mg-a{
+    margin:auto;
+}
+.c-btn{
+    color: white;
+    background-color: rgb(1, 1, 101);
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.b-btn{
+    background-color: rgb(1, 1, 101);
+    color: white;
+}
+@media screen and (max-width: 1011px) {
+    .b-blog{
+        display: block;
+    }
+    .blog-left{
+        width: 100%;
+    }
+    .blog-right{
+        width: 95%;
+    }
+    .blog-right ul li{
+        text-align: center;
+    }
+    .c-card{
+        display: block;
+        width: 95% !important;
+        margin: auto;
+    }
+    .c-card img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+.full-calci{
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calci{
+    width: fit-content;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.btn-row{
+    display: flex;
+}
+.cal-btn{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: green;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+.cal-btn:active{
+    background-color: rgb(0, 75, 0);
+}
+.output{
+    height: 30px;
+    border: 2px solid black;
+    margin: 10px;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+}

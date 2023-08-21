@@ -1,0 +1,38 @@
+.full-id{
+    background-color: blueviolet;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.id{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+}
+.id h1{
+    margin-top: 40px;
+    text-align: center;
+    background-color: blueviolet;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+}
+.id-btn{
+    width: fit-content;
+    background-color: blueviolet;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+}
+.btn-id{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}

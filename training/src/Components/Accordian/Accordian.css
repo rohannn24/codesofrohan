@@ -1,0 +1,49 @@
+.full-acc{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+.acc{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(245, 241, 241);
+}
+.acc-list{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.acc-full-head{
+    display: flex;
+}
+.ddb-back{
+    margin: auto 0;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 100%;
+}
+.acc-item{
+    height: fit-content;
+    width: fit-content;
+}
+.drop-down-btn{
+    width: 10px;
+    height: 10px;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    rotate: 45deg;
+    margin: auto 0;
+    transition: all 0.5s;
+}
+#para{
+    transition: all 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.acc-head{
+    margin:auto 0;
+    margin-left: 10px;
+}

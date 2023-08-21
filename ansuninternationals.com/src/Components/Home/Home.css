@@ -1,0 +1,99 @@
+.intro-content{
+    display: flex;
+}
+.intro-sec{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Resources/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c-text{
+    width: 50%;
+    padding-top: 25%;
+}
+.c-text-con{
+    margin: auto;
+    color: white !important;
+}
+.c-text-con h3{
+    letter-spacing: 7px;
+    font-weight: 700;
+}
+.c-text-con p{
+    text-align: justify;
+    font-weight: 600;
+}
+.c-img{
+    width: 40%;
+    margin-top: 15%;
+
+}
+.c-img img{
+    width: 100%;
+    margin-left: 80px;
+    animation: up-down 7000ms;
+    animation-iteration-count: infinite;
+}
+@keyframes up-down {
+    0%{
+        margin-top: 0px;
+    }
+    25%{
+        margin-top: -60px;
+    }
+    50%{
+        margin-top: 20px;
+    }
+    75%{
+        margin-top: 0px;
+    }
+}
+
+.first-sec{
+    margin-top: 50px;
+    display: flex;
+}
+.fs-content{
+    margin: auto;
+    padding: 30px;
+}
+@media screen and (max-width: 1032px) {
+    .c-full-home{
+        margin-top: 70px;
+    }
+    .intro-content{
+        flex-direction: column-reverse;
+    }
+    .intro-sec{
+        height: fit-content;
+    }
+    .c-text{
+        width: 100%;
+    }
+    .c-img{
+        width: 100%;
+    }
+    .c-img img{
+        animation-name: none;
+        margin-left: 0;
+    }
+    .first-sec{
+        display: block
+    }
+    .fs-img{
+        width: 100%;
+        overflow: hidden;
+    }
+    .fs-img img{
+        width: 100%;
+    }
+    .fs-content p, .fs-content h2{
+        text-align: justify;
+    }
+    .btng{
+        background-color: white !important;
+        color: black !important;
+        margin-bottom: 30px;
+    }
+}

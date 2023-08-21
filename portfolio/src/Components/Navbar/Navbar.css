@@ -1,0 +1,136 @@
+.c-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: black;
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    transition: all 0.5s !important;
+    overflow: hidden;
+    top: 0;
+}
+.web-name{
+    margin: auto;
+    color: white;
+    display: flex;
+}
+.rap-img{
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.rap-img img{
+    width: 150%;
+    margin-left: -12px;
+    margin-top: -5px;
+}
+.nav-list{
+    width: 60%;
+    margin: auto;
+}
+.nav-buttons{
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+}
+.nav-buttons a{
+    color: white;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav-buttons a:hover{
+    cursor: pointer;
+}
+.list-items::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: left;
+}
+.list-items:hover::after{
+    transform: scaleX(1);
+}
+.contact-details{
+    margin: auto;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-details:active{
+    color: black;
+    background-color: white;
+}
+@media screen and (max-width: 1032px) {
+    .web-name h1{
+        font-size: 30px;
+        margin: auto;
+    }
+}
+.bgr{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 999;
+    display: none;
+}
+.b-lines{
+    width: 30px;
+    border: 2px solid white;
+    margin: 10px;
+}
+@media screen and (max-width: 910px){
+    #handled{
+        display: none;
+    }
+    #handled1{
+        display: none;
+    }
+    .bgr{
+        display: block;
+    }
+    .c-nav{
+        display: block;
+        padding-bottom: 30px;
+        height: 55px;
+    }
+    .web-name{
+        justify-content: left;
+        margin: 0px;
+    }
+    
+    .web-name h1{
+        margin: auto 0px;
+        margin-left: 10px;
+    }
+    .rap-img{
+        margin: 0px;
+    }
+    .nav-buttons{
+        display: block;
+        text-align: center;
+    }
+    .list-items{
+        margin: 20px 0px;
+    }
+    .contact-details{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 314px) {
+    .web-name h1{
+        font-size: 20px;
+    }
+}

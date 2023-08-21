@@ -1,0 +1,89 @@
+.help-you{
+    margin-top: 110px;
+}
+.help-head{
+    background-color: rgb(0, 0, 94);
+    height: 200px;
+}
+.c-f{
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    border-radius: 100%;
+}
+.c-s{
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    border-radius: 100%;
+}
+.c-t{
+    background-color: rgba(255, 255, 255, 0.082);
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    border-radius: 100%;
+}
+.c-t p{
+    text-align: center;
+    padding-top: 65px;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+.name-email{
+    width: 70%;
+    margin: auto;
+}
+.name-email input{
+    width: 41%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 40px 20px;
+    margin-left: 60px;
+    border: 1px solid rgb(131, 131, 131);
+}
+.name-email label{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.b-part{
+    width: fit-content;
+    margin: 30px auto;
+}
+.text-input{
+    width: fit-content;
+    margin: auto;
+}
+.text-input textarea{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(131, 131, 131);
+}
+.btton{
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+@media screen and (max-width: 709px) {
+    .c-f{
+        width: 100%;
+    }
+    .c-s{
+        width: 80%;
+    }
+    .c-t{
+        width: 80%;
+    }
+    .c-t p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 643px) {
+    .name-email input{
+        width: 100%;
+    }
+}
