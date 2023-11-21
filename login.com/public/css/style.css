@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form{
+    max-width: 400px;
+    background-color: rgb(225, 225, 225);
+    width: 95%;
+    margin: auto;
+    margin-top: 20vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+.reg-form{
+    max-width: 400px;
+    background-color: rgb(225, 225, 225);
+    width: 95%;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-heading{
+    text-align: center;
+}
+.form form{
+    text-align: center;
+}
+.reg-form form{
+    text-align: center;
+}
+.reg-form form{
+    text-align: center;
+}
+.creden{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+#check-box{
+    text-align: left;
+}
+.form form button{
+    padding: 10px;
+    margin: 10px;
+}
+.reg-form form button{
+    padding: 10px;
+    margin: 10px;
+}
+.reg-link{
+    text-align: center;
+}
+.reg-link a{
+    text-decoration: none;
+}
+.name-after-reg{
+    text-align: center;
+    margin-top: 30vh;
+}

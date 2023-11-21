@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="form">
+        <div class="form-heading">
+            <h1>Login</h1>
+            <p>{{stateCode}}</p>
+        </div>
+        <form action="/login" method="post">
+            <input class = "creden" type="text" name = "username" placeholder="username"/>
+            <input class = "creden" id = "pass" type="password" name = "password" placeholder="password"/><br/>
+            <input type="checkbox" id="check-box"/>
+            <label for="checkbox">Show Password</label>
+            <button type = "submit">Submit</button>
+        </form>
+        <div class="reg-link"><a href="/register">Create New Account</a></div>
+    </div>
+    {{>footer}}
+</body>
+</html>

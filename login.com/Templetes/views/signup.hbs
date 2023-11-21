@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+
+    <div class="reg-form">
+        <div class="form-heading">
+            <h1>Login</h1>
+        </div>
+        <form action="/register" method="post">
+            <input class = "creden" type="text" name = "fname" placeholder="Full Name*"/>
+            <input class = "creden" type="email" name = "email" placeholder="Email*"/>
+            <input class = "creden" type="number" name = "number" placeholder="Phone Number*"/>
+            <input class = "creden" type="text" name = "username" placeholder="username*"/>
+            <input class = "creden" id = "pass" type="password" name = "password" placeholder="Password*"/><br/>
+            <input class = "creden" id = "cnfpass" type="text" name = "cnfPassword" placeholder="Confirm Password*"/><br/>
+            <input type="checkbox" id="check-box"/>
+            <label for="checkbox">Show Password</label>
+            <button type = "submit">Submit</button>
+        </form>
+        <div class="reg-link"><a href="/login">Already Have An Account</a></div>
+    </div>
+    {{>footer}}
+</body>
+</html>

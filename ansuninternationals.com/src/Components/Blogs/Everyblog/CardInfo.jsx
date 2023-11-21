@@ -1,6 +1,6 @@
 const CardInfo = [
     {
-        image : "https://ansuninternationals.com/blog/wp-content/uploads/2023/06/improve.png",
+        image : "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
         title : "Boost Your Online Visibility with Our Special Offers",
         desc : "Website special offers Celebrate the spirit of independence this year with our exclusive web development offers, tailor-made to enhance your online presence. From the 4th of July through to the 4th",
         url : "https://ansuninternationals.com/blog/boost-your-online-visibility-with-our-special-offers/"
