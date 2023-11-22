@@ -1,0 +1,34 @@
+.m-400{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(213, 213, 213);
+    padding: 30px;
+}
+.link-s{
+    width: fit-content;
+    text-align:center;
+    margin: auto;
+}
+.carousel-item{
+    height: 600px;
+}
+.carousel-item img{
+    height: 100%;
+}
+.form-check-label{
+    color: rgb(97, 97, 97);
+}
+.jumbotron {
+    background: #358CCE;
+    color: #FFF;
+    border-radius: 0px;
+    }
+    .jumbotron-sm { padding-top: 24px;
+    padding-bottom: 24px; }
+    .jumbotron small {
+    color: #FFF;
+    }
+    .h1 small {
+    font-size: 24px;
+    }

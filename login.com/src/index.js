@@ -51,6 +51,7 @@ app.post('/register', async (req, res) => {
     try {
         const cnfp = req.body.cnfPassword;
         const p = req.body.password;
+        
         if(cnfp === p){
             const newReg = await Register({
                 fname: req.body.fname,
