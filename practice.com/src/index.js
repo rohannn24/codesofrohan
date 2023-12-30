@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const chalk = require('chalk');
 const path = require('path');
-const PORT = 3000;
+const PORT = 8000;
 const hbs = require('hbs');
+const bcrypt = require('bcryptjs');
 const staticPath = path.join(__dirname, '../static');
 const viewsPath = path.join(__dirname, '../templetes/views');
 const partialsPath = path.join(__dirname, '../templetes/partials');
@@ -31,8 +32,8 @@ app.post('/login', async (req, res) => {
         const userid = req.body.username;
         const password = req.body.password;
         const data = await Reg.findOne({userid:userid});
-        console.log(data);
-        if(data.password === password){
+        const isMatch = await bcrypt.compare(password, data.password);
+        if(isMatch){
             res.status(201).render("index",{
                 userName: data.fname
             });
@@ -92,8 +93,11 @@ app.post('/signup', async (req, res) => {
                 password: req.body.password,
                 cnfPassword: req.body.cnfPassword
             });
+            
             const result = await newEntry.save();
-            res.status(201).render("login");
+            res.status(201).render("login", {
+                lState: "Registed Successfully..."
+            });
         } else{
             res.render("signup", {
                 pState: "Password Miss-matched."

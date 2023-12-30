@@ -7,5 +7,5 @@ box.onclick = function(){
         pass.type = 'text';
     } else{
         pass.type = 'password';
-    }
+    } 
 }
