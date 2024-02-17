@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            display: flex;
+            width: 100vw;
+        }
+        .first{
+            width: 20%;
+        }
+        .first img{
+            width: 30%;
+            display: block;
+            margin: auto;
+        }
+        .second{
+            width: 60%;   
+            margin: auto;
+        }
+        .nav-list{
+            display: flex;
+            list-style-type: none;
+            width: 80%;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+        .list-items{
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        .third{
+            width: 20%;
+            display: flex;
+            margin: auto;
+            justify-content: space-evenly;
+        }
+        .third img{
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <section class="navbar">
+        <div class="first">
+            <img src="https://st2.depositphotos.com/4035913/6124/i/450/depositphotos_61243733-stock-illustration-business-company-logo.jpg" alt="">
+        </div>
+        <div class="second">
+            <ul class="nav-list">
+                <li class="list-items">Home</li>
+                <li class="list-items">Blog</li>
+                <li class="list-items">Contact Us</li>
+                <li class="list-items">About Me</li>
+            </ul>
+        </div>
+        <div class="third">
+            <img src="facebook.png" alt="">
+            <img src="instagram.png" alt="">
+            <img src="twitter.png" alt="">
+        </div>
+    </section>
+</body>
+</html>

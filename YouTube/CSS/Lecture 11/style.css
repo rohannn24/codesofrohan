@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-top: 2px solid black;
+    /* animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-direction:alternate; */
+    animation: rotate 1s linear 2s 1  forwards;
+}
+
+@keyframes rotate {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    } 
+}

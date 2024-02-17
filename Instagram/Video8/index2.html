@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            padding: 40%;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img{
+            max-width: 350px;
+            height: fit-content;
+            transform: perspective(800px) rotateY(30deg);
+            -webkit-box-reflect: below
+            1px linear-gradient(
+                transparent,
+                transparent,
+                rgba(26, 26, 26, 0.534)
+                );
+        }
+        .container:hover img{
+            opacity: 0.3;
+        }
+        .container img:hover{
+            transform: perspective(0px)
+            rotate(0deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/8359_img_worlds_of_adventure-big1613913137.jpg-1024x683.webp" alt="">
+        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c3/33/97.jpg" alt="">
+        <img src="https://www.imgacademy.com/sites/default/files/july2023timelinephoto.jpg" alt="">
+    </div>
+</body>
+</html>

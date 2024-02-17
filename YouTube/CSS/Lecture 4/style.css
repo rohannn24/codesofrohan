@@ -1,0 +1,18 @@
+*{
+   margin: 0;
+   padding: 0; 
+}
+.heading{
+    color: #61a363;
+}
+.para{
+    color: rgb(255, 230, 0);
+}
+.bg-red{
+    height: 100vh;
+    background: red;
+    background-image: url('./123.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: bottom 50px right 100px; */
+}

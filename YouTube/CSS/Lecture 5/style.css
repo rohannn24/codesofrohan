@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+.first-div{
+    background-color: aqua;
+    /* margin: 20px; */
+    /* margin-bottom: 20px; */
+    /* padding: 20px; */
+    /* padding-left: 20px; */
+    /* padding-top: 20px; */
+    /* padding-right: 20px; */
+    /* padding-bottom: 20px; */
+    /* margin: 20px 60px; */
+    /* padding: 20px 60px; */
+    margin: 50px 20px 10px 80px;
+    padding: 50px 20px 80px 80px;
+}
+
+/* 
+right: 20px;
+left: 30px;
+top: 50px;
+bottom: 10px; 
+*/

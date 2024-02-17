@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-box{
+    background-color: aqua;
+    width: fit-content;
+    margin: auto;
+    height: fit-content;
+}
