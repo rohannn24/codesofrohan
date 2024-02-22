@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        #inpt {
+            display: block;
+            border-radius: 50px;
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        #input:focus {
+            border: 2px solid yellow;
+            outline: 0;
+        }
+
+        .search {
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+
+        .search img {
+            display: block;
+            margin: auto 0;
+            width: 18px;
+            height: 18px;
+        }
+
+        #clean {
+            position: absolute;
+            right: 20%;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 12px;
+            height: 12px;
+            display: none;
+        }
+
+        .imgFirst img {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgFirst">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" id="inpt">
+            <img src="./search-interface-symbol.png" alt="" id = 'search1'>
+            <img src="close.png" alt="" id='clean'>
+        </div>
+    </div>
+    <script>
+        document.getElementById('clean').addEventListener('click', () => {
+            document.getElementById('inpt')
+                .value = '';
+            document.getElementById('clean').style.display = 'none';
+        });
+        
+        window.addEventListener('keydown', () => {
+            if (document.getElementById('inpt').value.length > 0) {
+                document.getElementById('clean').style.display = 'block';
+            }
+        })
+        
+        document.getElementById('search1').addEventListener('click', () => {
+            window.location.href = `https://www.google.com/search?q=${document.getElementById('inpt').value}`
+        })
+    </script>
+</body>
+
+</html>
