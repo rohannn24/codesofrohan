@@ -1,0 +1,19 @@
+.radio-menu {
+    display: flex;
+  }
+  
+  .radio-menu input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-menu label {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .radio-menu input[type="radio"]:checked + label {
+    background-color: #ccc;
+  }
+  

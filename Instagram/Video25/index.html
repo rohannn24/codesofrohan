@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(66, 62, 41);
+        }
+
+        .poster,
+        .iron {
+            width: 300px;
+        }
+
+        .poster>img {
+            width: 100%;
+        }
+
+        .contain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+        }
+
+        .poster {
+            position: relative;
+        }
+
+        .upper {
+            position: absolute;
+            bottom: 8px;
+            left: -10px;
+            transform: scale(2.4) rotateX(40deg);
+            filter: brightness(1.7);
+            transition: all 0.5s;
+            transform-origin: bottom;
+            height: 0px;
+            perspective: 800px;
+        }
+
+        .upper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        }
+
+        .lower {
+            transition: all 0.3s;
+        }
+
+        .poster:hover .lower {
+            perspective: 800px;
+            transform: rotateX(40deg);
+        }
+
+        .poster:hover .upper {
+            display: block;
+            bottom: 78px;
+            height: auto;
+            transform: scale(2.4) rotateX(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contain">
+            <div class="poster">
+                <img class='lower'
+                    src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg"
+                    alt="">
+                <img src="1.png" alt="" class="upper">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
