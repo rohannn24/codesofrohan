@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text-to-Speech</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      /* Set background color to black */
+      color: white;
+      /* Set text color to white */
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    textarea {
+      margin-bottom: 10px;
+      background-color: rgb(37, 37, 37);
+      color: white;
+      border-radius: 20px;
+      resize: none;
+      padding: 10px 20px;
+    }
+
+    textarea:focus {
+      outline: 0;
+    }
+
+    button {
+      border-radius: 10px;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+      /* Darker gray on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <textarea id="inputText" rows="4" cols="50"></textarea>
+    <button onclick="speak()">Speak</button>
+  </div>
+
+  <script>
+    function speak() {
+      var text = document.getElementById("inputText").value;
+      var speech = new SpeechSynthesisUtterance();
+      speech.text = text;
+      speech.volume = 1;
+      speech.rate = 1;
+      speech.pitch = 1;
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+
+</body>
+
+</html>

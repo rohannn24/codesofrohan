@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .input>input{
+            font-size: 22px;
+            padding: 10px 20px;
+        }
+        .input>input:first-child{
+            color: white;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.231);
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            margin-right: -4px;
+        }
+        .input>input:first-child:focus{
+            border: 1px solid rgb(255, 255, 255);
+            outline: 0px;
+        }
+        .input>input:last-child{
+            color: white;
+            background-color: rgb(31, 31, 31);
+            border: 1px solid rgba(255, 255, 255, 0.231);
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .input>input:last-child:active{
+            background-color: white;
+            color: black;
+        }
+        .list{
+            color: white;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    <div class="main">
+        <div class="input">
+            <input type="text" id="searchInput" oninput="filterList()">
+            <input type="submit" value="Search">
+        </div>
+        <div class="list">
+            <ul id="messageList">
+                <li>Whispers of Wanderlust</li>
+                <li>Serene Sunsets: A Photographic Journey</li>
+                <li>Musings of a Midnight Dreamer</li>
+                <li>Recipes for the Soul</li>
+                <li>Adventures in Minimalism</li>
+                <li>Echoes of Enchantment</li>
+                <li>Chronicles of Creativity</li>
+                <li>Exploring Ethereal Landscapes</li>
+                <li>Moments of Mindfulness</li>
+                <li>Tales from Tranquil Trails</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script>
+        function filterList() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const listItems = document.querySelectorAll("#messageList li");
+            listItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

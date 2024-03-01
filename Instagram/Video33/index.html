@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Flip</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  /* Container styles */
+  .image-container {
+    width: 60vw;
+    height: 50vw;
+    perspective: 1000px; /* Perspective for 3D effect */
+    margin: 0 auto;
+  }
+
+  /* Image styles */
+  .image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d; /* Maintain 3D space during transition */
+    cursor: pointer;
+  }
+
+  /* Front side of image */
+  .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide back side */
+  }
+
+  /* Back side of image */
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide front side */
+    transform: rotateY(180deg); /* Initially flip to back */
+  }
+
+  /* Image details */
+  .details {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Show details on hover */
+  .image-container:hover .details {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+
+  /* CSS for flipped state */
+  .flipped .image {
+    transform: rotateY(180deg);
+  }
+</style>
+</head>
+<body> 
+
+<div class="image-container">
+  <!-- Front side of image -->
+  <div class="image">
+    <img class="front" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" alt="Front Image">
+    <!-- Back side of image with details -->
+    <div class="back">
+      <div class="details">
+        <h2>Image Details</h2>
+        <p>Description of the image goes here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Toggle flip effect on image click
+  document.querySelector('.image').addEventListener('click', function() {
+    this.parentElement.classList.toggle('flipped');
+  });
+</script>
+
+</body>
+</html>
