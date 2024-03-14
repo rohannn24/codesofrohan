@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 236, 236);
+    overflow: hidden;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: yellow;
+}
+
+.left,
+.right {
+    margin: auto 0;
+}
+
+.left>h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: x-large;
+    margin: auto 0;
+}
+
+.right>p {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.alert {
+    position: fixed;
+    z-index: 999;
+    right: 30px;
+    top: 80px;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+.input-box{
+    position: fixed;
+    left: 50%;
+    top: 4%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    background-color: rgb(211, 211, 211);
+    padding: 70px 30px;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.407);
+    display: none;
+    flex-direction: column;
+
+}
+.input-wrap{
+    display: flex;
+    gap: 20px;
+}
+.input-box>h3{
+    text-transform: capitalize;
+}
+.input-wrap>input{
+    display: block;
+}
+.input-wrap>input:first-child{
+    font-size: 22px;
+    margin: auto 0;
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+.input-wrap>input:first-child:focus{
+    outline: 0;
+}
+.input-wrap>input:last-child{
+    margin: auto 0;
+}
+.card-holder{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.c-card{
+    margin-bottom: 20px;
+    width: fit-content;
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+.btn-cover{
+    display: flex;
+    justify-content: space-between;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+}

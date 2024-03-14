@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            font-size: x-large;
+            padding: 10px 20px;
+        }
+        .left{
+            margin: auto 0;
+        }
+        .right{
+            display: flex;
+            gap: 20px;
+        }
+        .right>p{
+            cursor: pointer;
+            color: white;
+            background-color: green;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left"> Logo </div>
+        <div class="right" onclick="handleOnClick()">
+            <p>Login</p>
+            <p>Register</p>
+        </div>
+    </nav>
+    <script>
+        let ptr = document.querySelector('.right');
+        const handleOnClick = () => {
+            if(localStorage.getItem('token') === 'true'){
+                ptr.innerHTML = '<p style = "background-color: red;">Logout</p>';
+                localStorage.setItem('token', 'false');
+            } else{
+                localStorage.setItem('token', 'true');
+                ptr.innerHTML = "<p>Login</p><p>Register</p>";
+            }
+        }
+    </script>
+</body>
+</html>
