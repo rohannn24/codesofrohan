@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-contain::-webkit-scrollbar{
+            height: 0;
+        }
+        .img-contain{
+            overflow: auto;
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            height: 500px;
+            width: 1000px;
+            height: fit-content;
+            scroll-snap-type: x mandatory;
+            padding: 0 100px;
+        }
+        .img-ctrl{
+            scroll-snap-type: mandatory;
+            scroll-snap-align: center;
+            flex: 0 0 auto;
+            height: 500px;
+            width: 1000px;
+        }
+        .img-ctrl>img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-contain">
+            <div class="img-ctrl"><img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt=""></div>
+            <div class="img-ctrl"><img src="https://cdn.getyourguide.com/img/tour/64b6fa5d7a49d.jpeg/145.jpg" alt=""></div>
+            <div class="img-ctrl"><img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt=""></div>
+            <div class="img-ctrl"><img src="https://cdn.getyourguide.com/img/tour/64b6fa5d7a49d.jpeg/145.jpg" alt=""></div>
+            <div class="img-ctrl"><img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt=""></div>
+            <div class="img-ctrl"><img src="https://cdn.getyourguide.com/img/tour/64b6fa5d7a49d.jpeg/145.jpg" alt=""></div>
+            <div class="img-ctrl"><img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt=""></div>
+            <div class="img-ctrl"><img src="https://cdn.getyourguide.com/img/tour/64b6fa5d7a49d.jpeg/145.jpg" alt=""></div>
+            <div class="img-ctrl"><img src="https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp" alt=""></div>
+            <div class="img-ctrl"><img src="https://cdn.getyourguide.com/img/tour/64b6fa5d7a49d.jpeg/145.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.img-ctrl');
+        
+        setInterval(() => {
+            // Hide the current image
+            images[currentIndex].style.display = 'none';
+            
+            // Calculate the index of the next image
+            currentIndex = (currentIndex + 1) % images.length;
+            
+            // Show the next image
+            images[currentIndex].style.display = 'block';
+        }, 2000);
+    </script>
+</body>
+</html>
