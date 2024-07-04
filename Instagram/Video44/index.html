@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .full{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .outer{
+            background-color: rgba(255, 255, 255, 0.14);
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner{
+            width: 95%;
+            height: 95%;
+            background-color: black;
+            position: relative;
+            z-index: 999;
+        }
+        .border{
+            width: 200%;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            transform: rotate(-45deg) translate(-25%, 0);
+            animation: anim 2s infinite linear;
+        }
+        @keyframes anim {
+            from {
+                top: -160px;
+                left: -160px;
+            } to{
+                top: 110px;
+                left: 110px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div class="outer">
+            <div class="border"></div>
+            <div class="inner"></div>
+        </div>
+    </div>
+</body>
+</html>

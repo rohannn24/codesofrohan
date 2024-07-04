@@ -9,8 +9,13 @@ export const register = async (req, res, next) => {
         const existed = await User.findOne({username: req.body.username});
         if(existed) return next(res.json(createError(404, "user already exist...")));
         const salt = bcrypt.genSaltSync(10);
-        const hash = bcrypt.hashSync(req.body.password, salt);
-        const user = User({...req.body, password: hash});
+        const hashPassword = bcrypt.hashSync(req.body.password, salt);
+        const user = User({
+            fullname: req.body.fullname,
+            username: req.body.username,
+            email: req.body.email,
+            password: hashPassword,
+        });
         await user.save();
         res.status(200).send('User has been created sucessfully...');        
     } catch (error) {
